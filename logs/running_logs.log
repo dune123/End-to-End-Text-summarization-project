@@ -1,0 +1,209 @@
+[2023-11-20 08:15:04,561: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-20 08:15:04,567: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 08:15:04,568: INFO: common: created directory at: artifacts]
+[2023-11-20 08:15:04,569: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 08:15:45,125: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-20 08:15:45,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 08:15:45,128: INFO: common: created directory at: artifacts]
+[2023-11-20 08:15:45,129: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 08:27:26,405: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-20 08:27:26,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 08:27:26,467: INFO: common: created directory at: artifacts]
+[2023-11-20 08:27:26,468: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 08:30:06,824: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-20 08:30:06,826: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 08:30:06,827: INFO: common: created directory at: artifacts]
+[2023-11-20 08:30:06,827: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 08:31:01,358: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-11-20 08:31:01,359: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 08:31:01,360: INFO: common: created directory at: artifacts]
+[2023-11-20 08:31:01,360: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 09:25:59,294: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 09:25:59,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 09:25:59,298: INFO: common: created directory at: artifacts]
+[2023-11-20 09:25:59,299: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 09:55:05,910: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 09:55:05,912: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 09:55:05,914: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 09:55:05,914: INFO: common: created directory at: artifacts]
+[2023-11-20 09:55:05,914: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 09:55:05,914: INFO: data_ingestion: File already exists of size: ~ 0 KB]
+[2023-11-20 09:55:05,914: ERROR: main: [Errno 17] File exists: '/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/artifacts/data_ingestion/data.zip']
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 31, in extract_zip_file
+    os.makedirs(unzip_path,exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+FileExistsError: [Errno 17] File exists: '/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/artifacts/data_ingestion/data.zip'
+[2023-11-20 09:55:30,444: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 09:55:30,446: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 09:55:30,447: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 09:55:30,448: INFO: common: created directory at: artifacts]
+[2023-11-20 09:55:30,448: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 09:55:30,448: ERROR: main: [Errno 17] File exists: '/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/artifacts/data_ingestion/data.zip']
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 31, in extract_zip_file
+    os.makedirs(unzip_path,exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+FileExistsError: [Errno 17] File exists: '/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/artifacts/data_ingestion/data.zip'
+[2023-11-20 09:59:56,765: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 09:59:56,767: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 09:59:56,769: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 09:59:56,769: INFO: common: created directory at: artifacts]
+[2023-11-20 09:59:56,769: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 09:59:56,769: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-11-20 13:05:29,026: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 13:05:29,028: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 13:05:29,029: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 13:05:29,029: INFO: common: created directory at: artifacts]
+[2023-11-20 13:05:29,029: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 13:05:29,029: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-11-20 13:06:39,002: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 13:06:39,004: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 13:06:39,006: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 13:06:39,006: INFO: common: created directory at: artifacts]
+[2023-11-20 13:06:39,006: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 13:06:39,006: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 32, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file,'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2023-11-20 13:24:48,991: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 13:24:48,993: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 13:24:48,995: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 13:24:48,995: INFO: common: created directory at: artifacts]
+[2023-11-20 13:24:48,996: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 13:24:48,996: ERROR: main: DataIngestion.extract_gzip() takes 2 positional arguments but 3 were given]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 42, in extract_zip_file
+    self.extract_gzip(self.config.local_data_file,unzip_path)
+TypeError: DataIngestion.extract_gzip() takes 2 positional arguments but 3 were given
+[2023-11-20 13:25:16,092: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 13:25:16,094: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 13:25:16,094: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 13:25:16,094: INFO: common: created directory at: artifacts]
+[2023-11-20 13:25:16,094: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 13:25:16,094: ERROR: main: DataIngestion.extract_gzip() takes 2 positional arguments but 3 were given]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 42, in extract_zip_file
+    self.extract_gzip(self.config.local_data_file,unzip_path)
+TypeError: DataIngestion.extract_gzip() takes 2 positional arguments but 3 were given
+[2023-11-20 13:52:19,239: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 13:52:19,240: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 13:52:19,242: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 13:52:19,242: INFO: common: created directory at: artifacts]
+[2023-11-20 13:52:19,242: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 13:52:19,243: ERROR: main: [Errno 21] Is a directory: 'artifacts/data_ingestion']
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 42, in extract_zip_file
+    self.extract_gzip(self.config.local_data_file,unzip_path)
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_ingestion.py", line 18, in extract_gzip
+    with open(output_file, 'wb') as f_out:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+IsADirectoryError: [Errno 21] Is a directory: 'artifacts/data_ingestion'
+[2023-11-20 13:57:36,415: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 13:57:36,416: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 13:57:36,418: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 13:57:36,418: INFO: common: created directory at: artifacts]
+[2023-11-20 13:57:36,418: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 13:57:36,498: INFO: main: >>>>>>>>>> stage Data Ingestion stage completed <<<<<<<<<<]
+[2023-11-20 14:24:00,979: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 14:24:00,981: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 14:24:00,982: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 14:24:00,983: INFO: common: created directory at: artifacts]
+[2023-11-20 14:24:00,983: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 14:24:01,077: INFO: main: >>>>>>>>>> stage Data Ingestion stage completed <<<<<<<<<<]
+[2023-11-20 14:24:01,077: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-20 14:24:01,077: ERROR: main: name 'DataTransformationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 18, in <module>
+    data_transformation = DataTransformationTrainingPipeline()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'DataTransformationTrainingPipeline' is not defined
+[2023-11-20 14:24:23,809: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 14:24:23,811: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 14:24:23,811: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 14:24:23,812: INFO: common: created directory at: artifacts]
+[2023-11-20 14:24:23,812: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 14:24:23,889: INFO: main: >>>>>>>>>> stage Data Ingestion stage completed <<<<<<<<<<]
+[2023-11-20 14:24:23,889: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-20 14:24:23,890: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 14:24:23,890: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 14:24:23,890: INFO: common: created directory at: artifacts]
+[2023-11-20 14:24:23,890: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-20 14:24:23,891: ERROR: main: 'DataValidation' object has no attribute 'validate_all_files_exist']
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 19, in <module>
+    data_transformation.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_02_data_validation.py", line 13, in main
+    data_validation.validate_all_files_exist()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidation' object has no attribute 'validate_all_files_exist'
+[2023-11-20 14:25:22,322: INFO: main: >>>>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2023-11-20 14:25:22,323: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 14:25:22,325: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 14:25:22,325: INFO: common: created directory at: artifacts]
+[2023-11-20 14:25:22,325: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-20 14:25:22,406: INFO: main: >>>>>>>>>> stage Data Ingestion stage completed <<<<<<<<<<]
+[2023-11-20 14:25:22,406: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2023-11-20 14:25:22,407: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-20 14:25:22,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-20 14:25:22,408: INFO: common: created directory at: artifacts]
+[2023-11-20 14:25:22,408: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-20 14:25:22,408: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
