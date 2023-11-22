@@ -207,3 +207,173 @@ AttributeError: 'DataValidation' object has no attribute 'validate_all_files_exi
 [2023-11-20 14:25:22,408: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2023-11-21 10:16:23,403: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 10:16:23,407: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 10:16:23,408: INFO: common: created directory at: artifacts]
+[2023-11-21 10:16:23,409: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 14:25:49,759: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-21 14:25:49,760: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 14:25:49,762: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 14:25:49,762: INFO: common: created directory at: artifacts]
+[2023-11-21 14:25:49,762: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 14:25:50,496: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 30, in <module>
+    data_transformation.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_transformation.py", line 10, in __init__
+    self.tokenizer=AutoTokenizer.from_pretrained(config.tokenizer_name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 786, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2024, in from_pretrained
+    return cls._from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2256, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/models/pegasus/tokenization_pegasus_fast.py", line 147, in __init__
+    super().__init__(
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 120, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2023-11-21 14:26:21,220: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-21 14:26:21,221: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 14:26:21,223: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 14:26:21,223: INFO: common: created directory at: artifacts]
+[2023-11-21 14:26:21,223: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 14:26:21,912: ERROR: main: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 30, in <module>
+    data_transformation.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 13, in main
+    data_transformation = DataTransformation(config=data_transformation_config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_transformation.py", line 10, in __init__
+    self.tokenizer=AutoTokenizer.from_pretrained(config.tokenizer_name)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py", line 786, in from_pretrained
+    return tokenizer_class_fast.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2024, in from_pretrained
+    return cls._from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/tokenization_utils_base.py", line 2256, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/models/pegasus/tokenization_pegasus_fast.py", line 147, in __init__
+    super().__init__(
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/tokenization_utils_fast.py", line 120, in __init__
+    raise ValueError(
+ValueError: Couldn't instantiate the backend tokenizer from one of: 
+(1) a `tokenizers` library serialization file, 
+(2) a slow tokenizer instance to convert or 
+(3) an equivalent slow tokenizer class to instantiate and convert. 
+You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
+[2023-11-21 14:26:35,484: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-21 14:26:35,486: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 14:26:35,487: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 14:26:35,487: INFO: common: created directory at: artifacts]
+[2023-11-21 14:26:35,488: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 14:26:36,730: ERROR: main: 'DataTransformation' object has no attribute 'convert_examples_to_features']
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 30, in <module>
+    data_transformation.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/data_transformation.py", line 26, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataTransformation' object has no attribute 'convert_examples_to_features'
+[2023-11-21 14:27:19,288: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2023-11-21 14:27:19,289: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 14:27:19,291: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 14:27:19,291: INFO: common: created directory at: artifacts]
+[2023-11-21 14:27:19,291: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 14:27:22,522: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2023-11-21 15:41:53,456: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 15:41:53,460: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 15:42:12,779: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 15:42:12,780: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 15:42:16,751: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 15:42:16,753: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 15:43:48,520: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 15:43:48,522: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 15:43:48,523: INFO: common: created directory at: artifacts]
+[2023-11-21 15:43:48,524: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-21 15:44:29,949: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-21 15:44:29,951: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 15:44:29,952: INFO: common: created directory at: artifacts]
+[2023-11-21 15:44:29,952: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-22 11:41:54,074: INFO: main: >>>>>> stage Model Trainer started <<<<<<]
+[2023-11-22 11:41:54,076: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-22 11:41:54,078: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-22 11:41:54,079: INFO: common: created directory at: artifacts]
+[2023-11-22 11:41:54,079: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-22 11:46:35,853: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 43, in <module>
+    Model_trainer.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 13, in main
+    model_trainer.train()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 117, in __init__
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/training_args.py", line 1442, in __post_init__
+    and (self.device.type != "cuda")
+         ^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/training_args.py", line 1887, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+             ^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/training_args.py", line 1787, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.20.1`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2023-11-22 11:47:31,872: INFO: main: >>>>>> stage Model Trainer started <<<<<<]
+[2023-11-22 11:47:31,873: INFO: common: yaml file: /Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/config/config.yaml loaded successfully]
+[2023-11-22 11:47:31,874: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-22 11:47:31,874: INFO: common: created directory at: artifacts]
+[2023-11-22 11:47:31,875: INFO: common: created directory at: artifacts/model_trainer]
+[2023-11-22 11:49:27,612: ERROR: main: MPS backend out of memory (MPS allocated: 4.94 GB, other allocations: 4.09 GB, max allowed: 9.07 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).]
+Traceback (most recent call last):
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/main.py", line 43, in <module>
+    Model_trainer.main()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 13, in main
+    model_trainer.train()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/src/textSummarizer/components/model_trainer.py", line 35, in train
+    trainer.train()
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/trainer.py", line 1555, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/trainer.py", line 1860, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/transformers/trainer.py", line 2734, in training_step
+    self.accelerator.backward(loss)
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/accelerate/accelerator.py", line 1989, in backward
+    loss.backward(**kwargs)
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/Users/sameerraj/Desktop/Machine_learning_python/End-to-End-Text-summarization-project/venv/lib/python3.11/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: MPS backend out of memory (MPS allocated: 4.94 GB, other allocations: 4.09 GB, max allowed: 9.07 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
